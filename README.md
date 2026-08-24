@@ -19,6 +19,7 @@
 * [Key Features](#key-features)
 * [Workspace & Engine Architecture](#workspace-architecture)
 * [Supported Models](#supported-models)
+* [Preferred Models](#preferred-models)
 * [Folder Architecture](#folder-architecture)
 * [Getting Started](#getting-started)
   * [Windows Setup](#windows-setup)
@@ -97,6 +98,49 @@ Known-good image models available from the Model Manager:
 | DreamShaper 8 | `DreamShaper_8_pruned.safetensors` | SD 1.5 | 2.1 GB | Faster, lower-memory image generation. |
 | CyberRealistic V8 | `CyberRealistic_V8_FP16.safetensors` | SD 1.5 | 2.0 GB | Realistic SD 1.5 images and lower-memory systems. |
 | Rev Animated | `rev-animated-v1-2-2.safetensors` | SD 1.5 | 2.0 GB | Stylized/anime SD 1.5 images. |
+
+---
+
+## <a id="preferred-models"></a>⭐ Preferred Models
+
+Below are the recommended models for **DaRk LLM**, separated into their relevant engine categories and target directories:
+
+### 💬 Text Models (GGUF)
+*Place `.gguf` model files in `app/llm-models/`*
+
+| Model Filename | Backend | Approx. Size | Description |
+| :--- | :--- | :--- | :--- |
+| `DavidAU--Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF--Qwen3.5-9B-The-Defiant-Fable-Uncnr-Heretic-NEO-MAX-MTP-Q6_K.gguf` | llama.cpp | 8.2 GB | Qwen 3.5 9B Q6_K Uncensored Heretic NEO |
+| `DeepSeek-R1-Distill-Qwen-14B-abliterated-v2.Q4_K_M.gguf` | llama.cpp | 8.4 GB | DeepSeek R1 Distill Qwen 14B Q4_K_M Abliterated |
+| `GLM-4.7-Flash-Uncen-Hrt-NEO-CODE-MAX-imat-D_AU-IQ2_M.gguf` | llama.cpp | 9.6 GB | GLM 4.7 Flash Uncensored Heretic Code IQ2_M |
+| `Qwen3.5-9B-abliterated.Q4_K_M.gguf` | llama.cpp | 5.2 GB | Qwen 3.5 9B Q4_K_M Abliterated |
+
+### 🎨 Image Models (Stable Diffusion)
+*Place `.safetensors` model files in `app/models/`*
+
+| Model Filename | Type | Approx. Size | Recommended Use |
+| :--- | :--- | :--- | :--- |
+| `CyberRealistic_V8_FP16.safetensors` | SD 1.5 | 2.0 GB | Realistic photorealism & lower-memory systems |
+| `DreamShaperXL_Lightning.safetensors` | SDXL | 6.5 GB | General SDXL images, fantasy renders & illustration |
+| `Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors` | SDXL | 6.6 GB | High-quality 4-step photorealism |
+
+### 🎙️ Speech Models (Whisper)
+*Place `.bin` model files in `app/speech-models/`*
+
+| Model Filename | Model Variant | Size | Language Support |
+| :--- | :--- | :--- | :--- |
+| `ggml-base.en.bin` | Base | 142 MB | English Only |
+| `ggml-base.en-q5_1.bin` | Base (Quantized Q5_1) | 57 MB | English Only |
+| `ggml-small.en.bin` | Small | 466 MB | English Only |
+| `ggml-small.bin` | Small | 466 MB | Multilingual |
+
+### 🗣️ TTS Models (Kokoro)
+*Managed in `app/tts-models/` & `app/tts-runtime/`*
+
+| Model Filename | Format | Description |
+| :--- | :--- | :--- |
+| `kokoro-onnx-q8.json` | Kokoro ONNX | Lightweight Q8 quantized text-to-speech model |
+| `kokoro-onnx-fp32.json` | Kokoro ONNX | High-precision FP32 text-to-speech model |
 
 ---
 
