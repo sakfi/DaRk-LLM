@@ -1,26 +1,44 @@
 # Downloaded AI models
-app/models/
-app/openvino-models/
-app/llm-models/
-app/speech-models/
-app/tts-models/
+app/models/*
+!app/models/.gitkeep
+app/openvino-models/*
+!app/openvino-models/.gitkeep
+app/llm-models/*
+!app/llm-models/.gitkeep
+app/speech-models/*
+!app/speech-models/.gitkeep
+app/tts-models/*
+!app/tts-models/.gitkeep
 
 # Downloaded portable runtimes/backends
-app/backend/
-app/llm-backend/
-app/speech-backend/
-app/tts-runtime/
-app/tools/
+app/backend/*
+!app/backend/.gitkeep
+app/llm-backend/*
+!app/llm-backend/.gitkeep
+app/speech-backend/*
+!app/speech-backend/.gitkeep
+app/tts-runtime/*
+!app/tts-runtime/.gitkeep
+app/tools/*
+!app/tools/.gitkeep
 
 # Generated files
-app/config/
-app/cache/
-app/dist/
-app/outputs/
-app/chat-history/
-app/transcriptions/
-app/tts-outputs/
-app/tts-cache/
+app/config/*
+!app/config/.gitkeep
+app/cache/*
+!app/cache/.gitkeep
+app/dist/*
+!app/dist/.gitkeep
+app/outputs/*
+!app/outputs/.gitkeep
+app/chat-history/*
+!app/chat-history/.gitkeep
+app/transcriptions/*
+!app/transcriptions/.gitkeep
+app/tts-outputs/*
+!app/tts-outputs/.gitkeep
+app/tts-cache/*
+!app/tts-cache/.gitkeep
 
 # Dependencies and platform-specific copies
 **/node_modules/
