@@ -1,0 +1,13 @@
+- [x] Rearrange composer JSX in `TextChat.jsx` to stack the textarea at the top and the action buttons in a separate toolbar at the bottom.
+- [x] Refactor composer styles in `App.css` to align with the vertical stack layout, ensuring full-width textarea and proper spacing.
+- [x] Remove obsolete `margin-bottom: 2px` properties from action buttons and center them vertically in the toolbar.
+- [x] Implement sidebar visibility toggle state in `App.jsx` and persist state to `localStorage`.
+- [x] Add sidebar collapse transitions and `.sidebar.collapsed` styles in `App.css`.
+- [x] Integrate left sidebar toggle button in `TopStatusBar.jsx` using `PanelLeft`/`PanelLeftClose` Lucide icons.
+- [x] Set AI/assistant chat bubble wrap max-width to `80%` in `App.css` to improve text readability and prevent wide stretching.
+- [x] Implement global font size state in `App.jsx` and synchronize it to a CSS custom variable `--app-font-size` on the html element.
+- [x] Refactor body font-size to use relative `1rem` in `App.css` to enable page-wide scaling.
+- [x] Add a Font Size range slider to the "Appearance & Themes" section in `Settings.jsx` to adjust text size from 12px to 24px.
+- [x] Fix dropdown overlay menu readability issues in `App.css` by using a solid color-mix base (blending transparent surface with solid background) and forcing strong `backdrop-filter: blur(20px)` to prevent underlying text/icon bleeding.
+- [x] Merge "Color Themes" and "Text & Interface Size" subsections in `Settings.jsx` into a single unified card container separated by a horizontal divider line.
+- [x] Test production build using `npm run build` to verify there are no compilation or syntax errors.
