@@ -132,36 +132,39 @@ Ensure you have a modern web browser installed. Follow the quick guide below for
 
 ### Windows Setup
 
-1. **Launch:** Double-click **`windows.bat`**.
+1. **Download & Extract:** Click the green **`<> Code`** button at the top of this repository, select **Download ZIP**, and unzip the downloaded folder.
+2. **Launch:** Double-click **`windows.bat`**.
    > [!NOTE]
    > On the first run, the script will automatically download a portable Node.js runtime and configure pre-compiled GPU/CPU backend binaries.
-2. **Add Models:** Drop `.gguf` text weights into `app/llm-models/` or `.safetensors` image weights into `app/models/` (or download them via the **Model Manager** tab in the UI).
-3. **Generate:** Open `http://localhost:1420` in your browser, select your model, and write a prompt.
+3. **Add Models:** Drop `.gguf` text weights into `app/llm-models/` or `.safetensors` image weights into `app/models/` (or download them via the **Model Manager** tab in the UI).
+4. **Generate:** Open `http://localhost:1420` in your browser, select your model, and write a prompt.
 
 ### Linux Setup
 
-1. **Make executable:** Open a terminal in the project folder and make the script executable:
+1. **Download & Extract:** Click the green **`<> Code`** button at the top of this repository, select **Download ZIP**, and unzip the downloaded folder.
+2. **Make Executable:** Open a terminal in the unzipped folder and make the script executable:
    ```bash
    chmod +x linux.sh
    ```
-2. **Launch:** Run **`./linux.sh`**.
+3. **Launch:** Run **`./linux.sh`**.
    - **NVIDIA GPU Users:** You will be prompted to set up the high-performance **CUDA** backend.
    - **AMD Radeon Performance:** Run with **`./linux.sh --max-perf`** to add the ROCm backend (~1.3 GB download).
    - **Intel Core Ultra NPU:** Run with **`./linux.sh --setup-openvino`** to configure Intel NPU support.
-3. **Add Models:** Drop your weights into `app/llm-models/` or `app/models/`.
-4. **Generate:** Open `http://localhost:1420` in your browser.
+4. **Add Models:** Drop your weights into `app/llm-models/` or `app/models/`.
+5. **Generate:** Open `http://localhost:1420` in your browser.
 
 ### macOS Setup
 
-1. **Make executable:** Open a terminal in the project folder and make the script executable:
+1. **Download & Extract:** Click the green **`<> Code`** button at the top of this repository, select **Download ZIP**, and unzip the downloaded folder.
+2. **Make Executable:** Open a terminal in the unzipped folder and make the script executable:
    ```bash
    chmod +x mac.sh
    ```
-2. **Launch:** Run **`./mac.sh`**.
+3. **Launch:** Run **`./mac.sh`**.
    > [!IMPORTANT]
    > The prebuilt macOS backend is optimized for **Apple Silicon (M1 or newer)** and uses **Metal** GPU acceleration. *(macOS Intel hardware is unsupported)*.
-3. **Add Models:** Drop your weights into `app/llm-models/` or `app/models/`.
-4. **Generate:** Open `http://localhost:1420` in your browser.
+4. **Add Models:** Drop your weights into `app/llm-models/` or `app/models/`.
+5. **Generate:** Open `http://localhost:1420` in your browser.
 
 ---
 
