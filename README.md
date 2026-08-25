@@ -1,13 +1,16 @@
+<h1 align="center">Uncensored Local Studio (DaRk LLM)</h1>
+
 <p align="center">
-  <img src="readme_banner.png" alt="DaRk LLM Banner" width="800" style="border-radius: 12px;" />
+  <img src="readme_banner.png" alt="Uncensored Local Studio - DaRk LLM Banner" width="800" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
-  <strong>A premium, zero-configuration local AI studio and offline GUI for LLMs (Chat), Stable Diffusion (Image Generation), Whisper (Speech-to-Text), and Kokoro (Text-to-Speech). Powered by hardware-accelerated GPU and NPU execution on Windows, Linux, and macOS.</strong>
+  <strong>Uncensored Local Studio (DaRk LLM) is a premium, zero-configuration local AI desktop application and 100% offline GUI for LLM Chat (llama.cpp), Stable Diffusion Image Generation, Whisper Speech-to-Text, and Kokoro TTS. Powered by hardware-accelerated CUDA, ROCm, Vulkan, Metal, and OpenVINO execution on Windows, Linux, and macOS.</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Offline-100%25-green?style=for-the-badge&logo=offline" alt="100% Offline" />
+  <img src="https://img.shields.io/badge/Offline-100%25%20Private-green?style=for-the-badge&logo=offline" alt="100% Offline & Private" />
+  <img src="https://img.shields.io/badge/Uncensored-Local%20AI-purple?style=for-the-badge" alt="Uncensored Local AI" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue?style=for-the-badge" alt="Platforms" />
   <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" alt="License" />
 </p>
@@ -260,6 +263,18 @@ Ensure you have a modern web browser installed. Follow the quick guide below for
 
 ---
 
+## 🔍 Key Search Terms & Discoverability
+
+**Uncensored Local Studio (DaRk LLM)** is built for developers, creators, and privacy enthusiasts seeking a 100% offline, uncensored local AI suite. 
+
+* **Primary Keywords:** Uncensored Local Studio, DaRk LLM, Offline AI Desktop, Local LLM Chat GUI, Uncensored Stable Diffusion, Local Speech-to-Text Whisper, Kokoro Text-to-Speech ONNX.
+* **Backend Engines:** `llama.cpp` server, `stable-diffusion.cpp`, `whisper-cli`, `kokoro-js`.
+* **Hardware Acceleration:** NVIDIA CUDA, AMD ROCm, Vulkan Cross-Platform, Apple Silicon Metal, Intel Core Ultra OpenVINO NPU.
+* **Supported OS:** Windows 10/11, Linux (Ubuntu/Debian/Arch), macOS (Apple Silicon M1/M2/M3/M4).
+
+---
+
 ## <a id="licensing"></a>📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file. Bundles [llama.cpp](https://github.com/ggerganov/llama.cpp) and [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) (MIT Licenses). Model weights are subject to their respective creators' licenses.
+
